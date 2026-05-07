@@ -191,7 +191,7 @@
           "description": "docs ZIPが生成済みである",
           "kind": "zip",
           "pass": true,
-          "detail": "node-batch-processing-queue-docs.zip 9973 bytes"
+          "detail": "node-batch-processing-queue-docs.zip exists and exceeds minimum size"
         }
       ]
     },
