@@ -2,18 +2,18 @@
   "items": [
     {
       "id": "node-batch-processing-queue-1",
-      "title": "ノード・バッチ処理キュー サンプル 1",
+      "title": "Nodeバッチ処理キュー サンプル1",
       "status": "ready",
       "jobId": "job-001",
       "command": "codex run --dry-run",
-      "retryPolicy": "retry once after log review"
+      "retryPolicy": "ログ確認後に1回だけ再実行"
     },
     {
       "id": "node-batch-processing-queue-missing-required",
       "title": "必須項目不足サンプル",
       "status": "ready",
       "command": "codex run --dry-run",
-      "retryPolicy": "retry once after log review"
+      "retryPolicy": "ログ確認後に1回だけ再実行"
     }
   ]
 }

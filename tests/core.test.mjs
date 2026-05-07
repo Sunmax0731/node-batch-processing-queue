@@ -4,12 +4,12 @@ import { analyzeItems, renderMarkdownReport } from '../src/core.mjs';
 
 test('valid sample passes required field checks', () => {
   const report = analyzeItems({ items: [{
-  "id": "batch-queue-1",
-  "title": "ノード・バッチ処理キュー サンプル 1",
+  "id": "node-batch-processing-queue-1",
+  "title": "Nodeバッチ処理キュー サンプル1",
+  "status": "ready",
   "jobId": "job-001",
   "command": "codex run --dry-run",
-  "retryPolicy": "retry once after log review",
-  "status": "ready"
+  "retryPolicy": "ログ確認後に1回だけ再実行"
 }] });
   assert.equal(report.summary.result, 'passed');
   assert.equal(report.summary.errors, 0);
@@ -17,11 +17,11 @@ test('valid sample passes required field checks', () => {
 
 test('missing required field is reported', () => {
   const report = analyzeItems({ items: [{
-  "id": "batch-queue-missing-required",
+  "id": "node-batch-processing-queue-missing-required",
   "title": "必須項目不足サンプル",
+  "status": "ready",
   "command": "codex run --dry-run",
-  "retryPolicy": "retry once after log review",
-  "status": "ready"
+  "retryPolicy": "ログ確認後に1回だけ再実行"
 }] });
   assert.equal(report.summary.result, 'failed');
   assert.equal(report.summary.errors, 1);

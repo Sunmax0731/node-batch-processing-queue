@@ -1,7 +1,7 @@
 export const productConfig = {
   "repo": "node-batch-processing-queue",
-  "titleJa": "ノード・バッチ処理キュー",
-  "summary": "バッチ処理の状態と再試行管理",
+  "titleJa": "Nodeバッチ処理キュー",
+  "summary": "Node系バッチ処理のジョブ、コマンド、リトライ方針、状態を整理する。",
   "requiredFields": [
     "jobId",
     "command",
