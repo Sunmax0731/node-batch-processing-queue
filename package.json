@@ -5,7 +5,7 @@
   "type": "module",
   "description": "バッチ処理ジョブ、再試行方針、状態を整理し、失敗時の次アクションを出す。",
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs && node tools/qcds-evaluate.mjs",
     "validate": "npm test",
     "start": "node src/cli.mjs samples/sample-input.json dist/run"
   },
