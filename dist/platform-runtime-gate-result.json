@@ -1,0 +1,8 @@
+{
+  "product": "node-batch-processing-queue",
+  "platformType": "cli-release-tool",
+  "pass": true,
+  "method": "runtime-gate",
+  "manualTest": "not-run-by-codex",
+  "packageTest": true
+}
